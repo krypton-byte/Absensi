@@ -20,7 +20,7 @@
     <a href=""><b>Absensi</b> WEB</a>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
+  <div class="card border">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Login Administrator</p>
 
@@ -84,5 +84,16 @@
 <script src="AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="AdminLTE/dist/js/adminlte.min.js"></script>
+<style>
+  body {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card {
+     opacity: 0.7;
+  }
+</style>
 </body>
 </html>
