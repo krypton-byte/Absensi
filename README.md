@@ -9,3 +9,6 @@
 username: admin
 password: admin
 ```
+
+# Preview
+<img src="img/preview.webp">
