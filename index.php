@@ -20,10 +20,9 @@
     <a href=""><b>Absensi</b> WEB</a>
   </div>
   <!-- /.login-logo -->
-  <div class="card border">
+  <div class="card border border-info">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Login Administrator</p>
-
       <form action="" method="post">
       <?php
       session_start();
@@ -91,8 +90,9 @@
     background-size: cover;
     background-position: center;
   }
-  .card {
-     opacity: 0.7;
+  .card, .card-body {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
   }
 </style>
 </body>

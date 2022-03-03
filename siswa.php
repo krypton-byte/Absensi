@@ -122,6 +122,7 @@ include 'elements/header.php';
                                                     <p>Nama: <span id="dnama">${json.Nama}</span></p>
                                                     <p>Kelas: ${json.Kelas} ${json.nama}</p>
                                                     <p>Gender: <span id="dkelas">${{L: 'Laki-Laki', P: 'Perempuan'}[json.Gender]}</span></p>
+                                                    <p>Absensi: ${json.Izin} Izin,  ${json.Sakit} Sakit,  ${json.Hadir} Hadir,  ${json.Alpa} Alpa </p>
                                                 </div>
                                             </div>`)
                                 $('.card-footer').append(`<button onclick="edit('${document.getElementById('nis').value}');" class="btn btn-primary" style="float: right;"><i class="fas fa-trash"></i> Edit</button>
@@ -192,6 +193,7 @@ include 'elements/header.php';
                                     <p>Nama: <span id="dnama">${json.Nama}</span></p>
                                     <p>Kelas: ${json.Kelas} ${json.nama}</p>
                                     <p>Gender: <span id="dkelas">${{L: 'Laki-Laki', P: 'Perempuan'}[json.Gender]}</span></p>
+                                    <p>Absensi: ${json.Izin} Izin,  ${json.Sakit} Sakit,  ${json.Hadir} Hadir,  ${json.Alpa} Alpa </p>
                                 </div>
                             </div>`)
                 $('.card-footer').append(`<button onclick="edit('${document.getElementById('nis').value}');" class="btn btn-primary" style="float: right;"><i class="fas fa-trash"></i> Edit</button>

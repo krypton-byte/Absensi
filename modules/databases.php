@@ -96,7 +96,7 @@
             if(!$siswa){
                 throw new Exception('NIS Tidak Terdaftar');
             }
-            return $siswa;
+            return [...$siswa, 'Izin' => $this->jumlah('Izin'), 'Sakit' => $this->jumlah('Sakit'), 'Hadir' => $this->jumlah('Hadir'), 'Alpa' => $this->jumlah('Alpa')];
         }
 
         public function Absen(string $absen) {
@@ -121,6 +121,12 @@
             $query->bind_param('s', $this->nis);
             $query->execute();
             return $query->affected_rows;
+        }
+        public function jumlah(string $absen): int {
+            $query = $this->connection->prepare('SELECT COUNT(Siswa) FROM Absensi WHERE Siswa = ? AND Kehadiran = ?');
+            $query->bind_param('ss', $this->nis, $absen);
+            $query->execute();
+            return $query->get_result()->fetch_assoc()['COUNT(Siswa)'];
         }
     }
 
