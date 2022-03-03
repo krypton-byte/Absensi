@@ -17,12 +17,12 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href=""><b>Absensi</b> WEB</a>
+    <a href="" class="text-white"><b>Absensi</b> WEB</a>
   </div>
   <!-- /.login-logo -->
   <div class="card border border-info">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Login Administrator</p>
+      <p class="text-white login-box-msg">Login Administrator</p>
       <form action="" method="post">
       <?php
       session_start();
@@ -85,7 +85,7 @@
 <script src="AdminLTE/dist/js/adminlte.min.js"></script>
 <style>
   body {
-    background-image: url('img/bg.jpg');
+    background-image: url('img/bg.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
